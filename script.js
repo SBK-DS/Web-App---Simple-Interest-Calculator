@@ -7,8 +7,20 @@ function Save()
 
 function compute()
 {
-    p = document.getElementById("principal").value;
-    console.log(p);
-    
+    let Total_interest;
+
+    p = parseInt(document.getElementById("principal").value);
+    i = parseInt(document.getElementById("Rate").value);
+    y = parseInt(document.getElementById("years").value);
+    cy = parseInt((new Date().getFullYear()));
+
+
+    Total_interest = ((i*100)/(p*y)).toFixed(2);
+
+    document.getElementById("Deposit").textContent = p;
+    document.getElementById("Interest").textContent = i;
+    document.getElementById("Amount").textContent = Total_interest;
+    document.getElementById("Year").textContent = y+cy;
+    document.getElementById("After").style.display = "block";
 }
         
