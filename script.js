@@ -14,13 +14,19 @@ function compute()
     y = parseInt(document.getElementById("years").value);
     cy = parseInt((new Date().getFullYear()));
 
+    if(p<0)
+    {
+        alert("Enter positive Number");
+    }
+    else
+    {
+        Total_interest = ((i*100)/(p*y)).toFixed(2);
 
-    Total_interest = ((i*100)/(p*y)).toFixed(2);
-
-    document.getElementById("Deposit").textContent = p;
-    document.getElementById("Interest").textContent = i;
-    document.getElementById("Amount").textContent = Total_interest;
-    document.getElementById("Year").textContent = y+cy;
-    document.getElementById("After").style.display = "block";
+        document.getElementById("Deposit").textContent = p;
+        document.getElementById("Interest").textContent = i;
+        document.getElementById("Amount").textContent = Total_interest;
+        document.getElementById("Year").textContent = y+cy;
+        document.getElementById("After").style.display = "block";
+    }
 }
         
