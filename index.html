@@ -7,10 +7,10 @@
         <div>
             <h1>Simple Interest Calculator</h1>
             <div>
-                <p>Amount<input class="text-1" type="number"  id="principal"></p>
+                <p>Amount<input class="text-1" type="number" min="0"  id="principal"></p>
                 
-                <p>Interest Rate <input id="RangeBar" class="text-2" type="range" min="0.00" max="100.00" step="0.01">
-                    <a id="VC"></a>%
+                <p>Interest Rate <input onchange="Save()" id="Rate" class="text-2" type="range" min="0.00" max="100.00" step="0.01">
+                    <a id="VC">50.00</a>%
                 </p>
                 <p>No. of Years 
                     <select class="text-3" type="number"  id="years">
@@ -23,6 +23,7 @@
                 </p>
                 <button class="btn" onclick="compute()">Compute Interest</button>
             </div>
+            <div class="After"></div>
         </div>
     </body>
 </html>
