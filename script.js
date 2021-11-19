@@ -17,6 +17,7 @@ function compute()
     if(p<=0)
     {
         alert("Enter positive Number");
+        document.getElementById("principal").focus();
     }else
     {
         Total_interest = ((i*100)/(p*y)).toFixed(2);
