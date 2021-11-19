@@ -1,4 +1,57 @@
-body {background-color:tan;}
+body {background-color: black;}
 h1{color:green;}
+
+body > div {
+    background-color: white;
+    display: block;
+    border-radius: 25px;
+    padding: 25px;
+    padding-top: 20px;
+    width: 400px;
+    margin-left: 45px;
+}
+
+body > div > h1 {
+    position: relative;
+    left: -1%;
+    color: rgb(139, 139, 139);
+}
+
+body > div > div {
+    background-color: yellow;
+    margin-left: 60px;
+    font-family: sans-serif;
+    font-weight: 560;
+    font-size: 12px;
+}
+
+#VC {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text-1 {
+    position: relative;
+    margin-left: 48px;
+    width: 118px;
+}
+
+.text-2 {
+    position: relative;
+    margin-left: 17px;
+    width: 100px;
+}
+
+.text-3 {
+    position: relative;
+    margin-left: 21px;
+    width: 40px;
+}
+
+.btn {
+    width: 95px;
+    font-size: 10px;
+    font-weight: 545;
+}
 
 
