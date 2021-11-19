@@ -14,7 +14,7 @@ function compute()
     y = parseInt(document.getElementById("years").value);
     cy = parseInt((new Date().getFullYear()));
 
-    if(p<=0)
+    if(p<=0 || document.getElementById("principal").value=="")
     {
         alert("Enter positive Number");
         document.getElementById("principal").focus();
@@ -23,7 +23,7 @@ function compute()
         Total_interest = ((i*100)/(p*y)).toFixed(2);
 
         document.getElementById("Deposit").textContent = p;
-        document.getElementById("Interest").textContent = i;
+        document.getElementById("Interest").textContent = i+"%";
         document.getElementById("Amount").textContent = Total_interest;
         document.getElementById("Year").textContent = y+cy;
         document.getElementById("After").style.display = "block";
