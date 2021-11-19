@@ -14,7 +14,7 @@ function compute()
     y = parseInt(document.getElementById("years").value);
     cy = parseInt((new Date().getFullYear()));
 
-    if(p<0)
+    if(p<=0)
     {
         alert("Enter positive Number");
     }
